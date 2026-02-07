@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  folding-simulator:
+    build: .
+    volumes:
+      - ./output:/app/output
+    command: [ "--sequence", "MKVIFLALLVSTISSV" ]
